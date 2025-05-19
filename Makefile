@@ -3,13 +3,13 @@ TAG=latest
 all: push
 
 build:
-	docker build -t alephdata/aleph-elasticsearch:$(TAG) .
+	docker build -t openaleph/aleph-elasticsearch:$(TAG) .
 
 run: build
-	docker run -ti alephdata/aleph-elasticsearch:$(TAG) bash
+	docker run -ti openaleph/aleph-elasticsearch:$(TAG) bash
 
 exec: build
-	docker run -ti -v $(PWD)/secrets:/secrets alephdata/aleph-elasticsearch:$(TAG)
+	docker run -ti -v $(PWD)/secrets:/secrets openaleph/aleph-elasticsearch:$(TAG)
 
 push: build
-	docker push alephdata/aleph-elasticsearch:$(TAG)
+	docker push openaleph/aleph-elasticsearch:$(TAG)
