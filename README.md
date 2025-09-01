@@ -1,3 +1,7 @@
+# ARCHIVED
+
+For OpenAleph 5 and beyond, use Elasticsearch 9 with this image: https://github.com/openaleph/openaleph-search/pkgs/container/elasticsearch
+
 # aleph-elasticsearch
 
 This is a vendored version of ElasticSearch, suitable for use with the main OpenAleph application.
